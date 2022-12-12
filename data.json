@@ -1,0 +1,18 @@
+{
+    "projects": {
+        "id": "0",
+        "project_name": "calculator",
+        "description": "This is a calculator I made for The Odin Project Full Stack Course",
+        "technologies":[
+            "html",
+            "css",
+            "javascript"
+        ],
+        "live_link": "https://matthewsimmonsdev.github.io/Calculator/",
+        "github_link": "https://github.com/MatthewSimmonsDev/Calculator",
+        "image_urls": [
+            "./images/calc/calc-only-screenshot",
+            "./images/calc/calc-screenshot"
+        ]
+    }
+}
