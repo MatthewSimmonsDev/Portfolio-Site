@@ -1,0 +1,1 @@
+This is project 6 for Team Treehouse. It is a portfolio site.
