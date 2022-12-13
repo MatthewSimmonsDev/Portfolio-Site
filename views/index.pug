@@ -4,11 +4,10 @@ block content
 
   article.portfolio-intro
 
-    //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
     h1 A view of my work
 
     //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Portfolio description
+    p This is my portfolio that I created from sources such as The Odin Project and Team Treehouse
 
 
   article.portfolio-project-thumbs
@@ -22,6 +21,6 @@ block content
 
         .cell
           a(href=`/project/${project.id}`)
-            img.thumbnail(src=`${data.projects.image_urls[0]}`, alt=`thumbnail image ${data.projects.project_name}`)
-            h5 #{data.projects.project_name}
+            //- img.thumbnail(src=`${project.image_urls[0]}`, alt=`thumbnail image `)
+            h5= project.project_name
 

@@ -5,6 +5,8 @@ const data = require('./data.json')
 app.use(express.static('public'));
 app.set('view engine', 'pug');
 
+app.use('/static', express.static('public'));
+
 app.get("/", (req, res) =>{
     res.render('index', {data});
 });

@@ -1,5 +1,7 @@
 {
-    "projects": {
+    "projects":[ 
+    
+        {
         "id": "0",
         "project_name": "Calculator",
         "description": "This is a calculator I made for The Odin Project Full Stack Course",
@@ -11,8 +13,26 @@
         "live_link": "https://matthewsimmonsdev.github.io/Calculator/",
         "github_link": "https://github.com/MatthewSimmonsDev/Calculator",
         "image_urls": [
-            "../images/calc/calc-only-screenshot.png",
-            "../images/calc/calc-screenshot.png"
+            "/static/images/calc/calc-only-screen-shot.png",
+            "/static/images/calc/calc-screen-shot.png"
+        ]
+    },
+    
+    {
+        "id": "1",
+        "project_name": "Data Pagination",
+        "description": "This project for Team Treehouse utilizes data pagination",
+        "technologies":[
+            "html",
+            "css",
+            "javascript"
+        ],
+        "live_link": "https://matthewsimmonsdev.github.io/Data-Pagination/",
+        "github_link": "https://github.com/MatthewSimmonsDev/Data-Pagination",
+        "image_urls": [
+            "/static/images/calc/calc-only-screen-shot.png",
+            "/static/images/calc/calc-screen-shot.png"
         ]
     }
-}
+    
+]}
