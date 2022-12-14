@@ -6,21 +6,14 @@ block content
 
     h1 A view of my work
 
-    //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
     p This is my portfolio that I created from sources such as The Odin Project and Team Treehouse
 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
-      //- Use the Pug `each` iterator to loop over the projects in your data file  
       each project in data 
-        //- Use the example Pug code below and interpolated template literals as needed to dynamically generate:
-          //- The paths in the link's href and img's src attributes
-          //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
-          //- The project title for the h5 element's text
-
         .cell
           a(href=`/project/${project.id}`)
-            //- img.thumbnail(src=`${project.image_urls[0]}`, alt=`thumbnail image `)
+            img.thumbnail(src=`${project.image_urls[0]}`, alt=`thumbnail image `)
             h5= project.project_name
 

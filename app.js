@@ -1,6 +1,7 @@
 const express = require('express');
+const { render } = require('pug');
 const app = express();
-const data = require('./data.json')
+const data = require('./data.json').projects
 
 app.use(express.static('public'));
 app.set('view engine', 'pug');
@@ -16,28 +17,28 @@ app.get("/about", (req, res) =>{
 });
 
 app.get("/project/:id", (req, res) =>{
-    const project = data.projects[req.params.id];
-    res.render('project', {project, data})
+    const projectId = req.params.id;
+    const project = data.find(({ id }) => id === +projectId);
+    res.render('project', {project})
 });
 
-//error handler 404
-app.use((req, res, next) => {
-    console.log("404 error handler called")
-    const err = new Error();
+// 404 Error Handler
+app.use(function(req, res, next){
+    const err = new Error('Page Does Not Exist');
     err.status = 404;
-    res.status(err.status).send("Sorry that page doesn't exist.")
-  })
-
-//global error handler
-app.use((err, req, res, next) => {
-    if(err){console.log("Global error handler called", err)}
-    if(err.status === 404){
-        res.status(404).send(err)
-    } else {
-        err.message = err.message || `Oops! it looks like something went wrong.`;
-        res.status(err.status || 500).send(err);
-    }
+    next(err);
 });
+
+// Global Error Handler
+app.use((err, req, res, next) => {
+    res.locals.error = err;
+    res.status(err.status);
+    if(err.status === 404) {
+        res.render('page-not-found', {err});
+    } else {
+        res.render('error', {err});
+    }
+  });
 
 
 app.listen(3000, function () {
