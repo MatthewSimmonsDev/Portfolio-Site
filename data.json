@@ -30,8 +30,81 @@
         "live_link": "https://matthewsimmonsdev.github.io/Data-Pagination/",
         "github_link": "https://github.com/MatthewSimmonsDev/Data-Pagination",
         "image_urls": [
-            "/static/images/calc/calc-only-screen-shot.png",
-            "/static/images/calc/calc-screen-shot.png"
+            "/static/images/data-pagination/Data-pagination-1.png",
+            "/static/images/data-pagination/Data-pagination-2.png"
+        ]
+    },
+    
+    {
+        "id": 2,
+        "project_name": "Interactive Forms",
+        "description": "This project for Team Treehouse shows my skills at creating interactive forms.",
+        "technologies":[
+            "html",
+            "css",
+            "javascript"
+        ],
+        "live_link": "https://matthewsimmonsdev.github.io/Interactive-Forms/",
+        "github_link": "https://github.com/MatthewSimmonsDev/Interactive-Forms",
+        "image_urls": [
+            "/static/images/interactive-forms/interactive-forms-1.png",
+            "/static/images/interactive-forms/interactive-forms-2.png"
+        ]
+    },
+    
+    {
+        "id": 3,
+        "project_name": "OOP Game Show App",
+        "description": "The aim of this project was to create a hangman-like quiz game.",
+        "technologies":[
+            "html",
+            "css",
+            "javascript"
+        ],
+        "live_link": "https://matthewsimmonsdev.github.io/OOP-Game-Show-App/",
+        "github_link": "https://github.com/MatthewSimmonsDev/OOP-Game-Show-App",
+        "image_urls": [
+            "/static/images/OOP-Game/OOP-Game-1.png",
+            "/static/images/OOP-Game/OOP-Game-2.png"
+        ]
+    },
+    
+    {
+        "id": 4,
+        "project_name": "Public API Requests",
+        "description": "APIs are super fun to use.  And there are so many cool free ones out there!",
+        "technologies":[
+            "html",
+            "css",
+            "javascript",
+            "APIs"
+        ],
+        "live_link": "https://matthewsimmonsdev.github.io/Public-API-Requests/",
+        "github_link": "https://github.com/MatthewSimmonsDev/Public-API-Requests",
+        "image_urls": [
+            "/static/images/Public-API/Public-API-1.png",
+            "/static/images/Public-API/Public-API-1.png"
+        ]
+    },
+    
+    {
+        "id": 5,
+        "project_name": "Portfolio Site",
+        "description": "This is the website that you're on!",
+        "technologies":[
+            "html",
+            "css",
+            "javascript",
+            "APIs",
+            "node.js",
+            "express.js",
+            "pug"
+        ],
+        "live_link": "https://matthewsimmonsdev.github.io/Portfolio-Site/",
+        "github_link": "https://github.com/MatthewSimmonsDev/Portfolio-Site",
+        "image_urls": [
+            "/static/images/Portfolio-Site/Portfolio-Site-1.png",
+            "/static/images/Portfolio-Site/Portfolio-Site-2.png"
         ]
     }
     

@@ -35,7 +35,9 @@ app.use((err, req, res, next) => {
     res.status(err.status);
     if(err.status === 404) {
         res.render('page-not-found', {err});
+        console.log(`It's a ${err.status} whoopsie.`)
     } else {
+        console.log(`Aww, bummer.  ${err.status} error!`)
         res.render('error', {err});
     }
   });

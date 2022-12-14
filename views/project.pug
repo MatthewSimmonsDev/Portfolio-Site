@@ -22,8 +22,8 @@ block content
           each tech  in project.technologies
             li= tech  
 
-        a.btn-link(href='https://matthewsimmonsdev.github.io/Calculator/') Live Demo
-        a.btn-link(href='https://github.com/MatthewSimmonsDev/Calculator') GitHub Repo
+        a.btn-link(href=`https://matthewsimmonsdev.github.io/${project.project_name.replaceAll(' ','-')}`) Live Demo
+        a.btn-link(href=`https://github.com/MatthewSimmonsDev/${project.project_name.replaceAll(' ','-')}`) GitHub Repo
 
     .project-img-box.box
 
