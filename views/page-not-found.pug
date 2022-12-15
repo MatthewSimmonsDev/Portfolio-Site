@@ -1,6 +1,12 @@
 extends layout.pug
 
 block content
-
+    
     h1= err.message
+    h2 That is not a valid project
     h2= err.status
+
+    nav.nav
+      a(href='/')
+        span &larr;
+        |  Back

@@ -35,13 +35,14 @@ app.use(function(req, res, next){
 // Global Error Handler
 app.use((err, req, res, next) => {
     res.locals.error = err;
-    res.status(err.status);
-    if(err.status === 404) {
+    if(err.status >= 100 && err.status < 600) {
+        res.status(err.status);
         res.render('page-not-found', {err});
         console.log(`It's a ${err.status} whoopsie.`)
-    } else {
+    } else{
+        err.status = 500;
         console.log(`Aww, bummer.  ${err.status} error!`)
-        res.render('error', {err});
+        res.render('error', {err, req});
     }
   });
 
