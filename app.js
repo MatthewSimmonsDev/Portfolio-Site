@@ -6,8 +6,10 @@ const data = require('./data.json').projects
 app.use(express.static('public'));
 app.set('view engine', 'pug');
 
+//Use static assets
 app.use('/static', express.static('public'));
 
+//Call pages
 app.get("/", (req, res) =>{
     res.render('index', {data});
 });
@@ -16,6 +18,7 @@ app.get("/about", (req, res) =>{
     res.render('about')
 });
 
+//Calls page based on the project number
 app.get("/project/:id", (req, res) =>{
     const projectId = req.params.id;
     const project = data.find(({ id }) => id === +projectId);
@@ -42,7 +45,7 @@ app.use((err, req, res, next) => {
     }
   });
 
-
+//listener for localhost 3000
 app.listen(3000, function () {
     console.log("Server running on localhost 3000")
 });

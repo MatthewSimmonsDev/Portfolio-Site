@@ -21,18 +21,26 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
-  background: #fefefe;
+  background: #350606;
   background: #000;
   transform: translateX(0px);
   transition: all 0.4s ease-out;
 }
 
 article {
-  background: #fefefe;
+  background: #350606;
 }
 
 h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+  font-family: 'sans-serif', 'Merriweather', serif;
+}
+
+h1{
+  color: #fefefe;
+}
+
+h2{
+  color: #fefefe;
 }
 
 h5{
@@ -47,11 +55,12 @@ h6{
   -webkit-text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 600;
+  color: #fefefe;
 }
 
 p{
   font-size: 15px;
-  color: #666;
+  color: rgb(179, 179, 179);
 }
 
 a {
@@ -63,7 +72,7 @@ a {
   min-width: 320px;
   height: 100%;
   min-height: 100%;
-  background: #fefefe;
+  background: #000000;
 }
 
 .flex-row-wrap {
@@ -82,7 +91,7 @@ a {
   width: 100%;
   max-width: 1200px;
   padding: 40px 50px 30px;
-  background: #fefefe;
+  background: #000000;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -91,10 +100,18 @@ a {
   margin: 0 auto 8px;
 }
 
+.projects-box h5 {
+  color: #fefefe;
+}
+
 .box h6 {
   font-size: 1rem;
   font-weight: bolder;
   letter-spacing: 2px;
+}
+
+ul {
+  color: #fefefe;
 }
 
 .box li {
@@ -247,7 +264,7 @@ nav a span {
   font-size: 13px;
   letter-spacing: 2.25px;
   text-transform: uppercase;
-  color: #222;;
+  color: #fefefe;
   margin: 0 auto 8px;
 }
 
